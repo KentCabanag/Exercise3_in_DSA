@@ -46,18 +46,19 @@ print("\033[34;4m1\033[0m -> Add an item")
 print("\033[34;4m2\033[0m -> Search")
 print("\033[34;4m3\033[0m -> Exit (y/n)\n")
 
+
 while True:
-    pick = int(input("Select a Number on the Menu: "))
+    pick = int(input("\nSelect a Number on the Menu: "))
     if pick == 1:
         print(">> Add an Item on this <<")
-
-        name = input("Full name: "),
+        name = input("Full name: ")
         age = int(input("Age: "))
         add = input("Address: ")
         phone = int(input("Phone number: "))
         gender = input("Gender: ")
         Rel = input("Religion: ")
         Nal = input("Nationality: ")
+
 
     elif pick == 2:
         print("\n>> Search an Item <<")
@@ -67,7 +68,7 @@ while True:
         search = input("Type the Item you want to search: ")
         if search == "Name":
             print(f"Your Name is: {name}")
-    
+            
     elif pick == 3:
         y_or_no = input("Do you want to exit?\n Type yes/no: ")
         if y_or_no == "yes":
