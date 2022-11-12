@@ -44,13 +44,13 @@ print("\n\033[34;4mMenu:\033[0m")
 print("\033[31;1mPick A number on this\033[0m")
 print("\033[34;4m1\033[0m -> Add an item")
 print("\033[34;4m2\033[0m -> Search")
-print("\033[34;4m3\033[0m -> Exit (y/n)\n")
+print("\033[34;4m3\033[0m -> Exit (yes/no)\n")
 
 
 while True:
-    pick = int(input("\nSelect a Number on the Menu: "))
+    pick = int(input("\n\033[33;1mSelect a Number on the Menu\033[0m: "))
     if pick == 1:
-        print(">> Add an Item on this <<")
+        print(">> \033[34;4m\033[0mAdd your Information on this\033[0m <<")
         name = input("Full name: ")
         age = int(input("Age: "))
         add = input("Address: ")
@@ -58,28 +58,42 @@ while True:
         gender = input("Gender: ")
         Rel = input("Religion: ")
         Nal = input("Nationality: ")
-
-
+        Info = {
+        "Name": name,
+        "Age": age,
+        "Address": add,
+        "Phone": phone,
+        "Gender": gender,
+        "Religion": Rel,
+        "Nationality": Nal,
+    }
     elif pick == 2:
         print("\n>> Search an Item <<")
         print("\n\033[34;4mMenu:\033[0m")
-        print("\033[31;1mPick an Item on this\033[0m")
-        print("Name, Age, Address, Phone, Gender, Religion, Nationality")
+        print("\033[31;1mPick an Item you want to search on this\033[0m")
+        print("\033[32;1mName, Age, Address, Phone, Gender, Religion, Nationality\033[0m")
         search = input("\nType the Item you want to search: ")
         if search == "Name":
-            print(f"Your Name is: {name}")
+            print("\033[32;1mYour Name is\033[0m:")
+            print(Info["Name"] )
         elif search == "Age":
-            print(f"Your Age is: {age}")
+            print("\033[32;1mYour Age is\033[0m: ")
+            print(Info["Age"] )
         elif search == "Address":
-            print(f"Your Address is: {add}")
+            print("\033[32;1mYour Address is\033[0m:")
+            print(Info["Address"] )
         elif search == "Phone":
-            print(f"Your Phone Number is: {phone}")
+            print("\033[32;1mYour Phone Number is\033[0m:")
+            print(Info["Phone"] )
         elif search == "Gender":
-            print(f"Your Gender is: {gender}")
+            print("\033[32;1mYour Gender is\033[0m:")
+            print(Info["Gender"] )
         elif search == "Religion":
-            print(f"Your Religion is: {Rel}")
+            print("\033[32;1mYour Religion is\033[0m:")
+            print(Info["Religion"] )
         elif search == "Nationality":
-            print(f"Your Nationality is: {Nal}")
+            print("\033[32;1mYour Nationality is\033[0m:")
+            print(Info["Nationality"] )
             
             
     elif pick == 3:
