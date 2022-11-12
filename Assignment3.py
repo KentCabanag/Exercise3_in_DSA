@@ -44,4 +44,8 @@ print("\n\033[34;4mMenu:\033[0m")
 print("\033[31;1mPick A number on this\033[0m")
 print("\033[34;4m1\033[0m -> Add an item")
 print("\033[34;4m2\033[0m -> Search")
-print("\033[34;4m3\033[0m -> Exit (y/n)")
+print("\033[34;4m3\033[0m -> Exit (y/n)\n")
+
+while True:
+    pick = input("Select a Number on the Menu: ")
+
