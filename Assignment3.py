@@ -65,9 +65,22 @@ while True:
         print("\n\033[34;4mMenu:\033[0m")
         print("\033[31;1mPick an Item on this\033[0m")
         print("Name, Age, Address, Phone, Gender, Religion, Nationality")
-        search = input("Type the Item you want to search: ")
+        search = input("\nType the Item you want to search: ")
         if search == "Name":
             print(f"Your Name is: {name}")
+        elif search == "Age":
+            print(f"Your Age is: {age}")
+        elif search == "Address":
+            print(f"Your Address is: {add}")
+        elif search == "Phone":
+            print(f"Your Phone Number is: {phone}")
+        elif search == "Gender":
+            print(f"Your Gender is: {gender}")
+        elif search == "Religion":
+            print(f"Your Religion is: {Rel}")
+        elif search == "Nationality":
+            print(f"Your Nationality is: {Nal}")
+            
             
     elif pick == 3:
         y_or_no = input("Do you want to exit?\n Type yes/no: ")
