@@ -36,7 +36,7 @@
 #Full name: Danilo Madrigalejos
 #Age: 30
 #Address: Eastwood
-#Phone number: 1234567890 What do you want to do? (1-3): 3
+#Phone number: 1234567890What do you want to do? (1-3): 3
 #Exit? n
 
 
